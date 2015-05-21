@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B38C14D7-718D-4051-878D-70A4B37A45E0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>673626713A879394240570BB50ACFC7C7D0F03DD</key>
+		<string>https://github.com/allesknigge/Lotto.git</string>
+		<key>9A3CC8CCBC309DF4B18F1093AAD842D3D6EB356C</key>
+		<string>https://github.com/allesknigge/swiftlotto.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lotto.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>673626713A879394240570BB50ACFC7C7D0F03DD</key>
+		<string>../..</string>
+		<key>9A3CC8CCBC309DF4B18F1093AAD842D3D6EB356C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/allesknigge/Lotto.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>673626713A879394240570BB50ACFC7C7D0F03DD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A3CC8CCBC309DF4B18F1093AAD842D3D6EB356C</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>673626713A879394240570BB50ACFC7C7D0F03DD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lotto</string>
+		</dict>
+	</array>
+</dict>
+</plist>

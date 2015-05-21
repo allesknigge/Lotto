@@ -9,39 +9,57 @@
 import Cocoa
 
 class auto: NSView {
-    var count = 0
+    
+    func pruefe(a: NSArray, m: NSArray) ->Int{
+        var count = 0
+        for i in a {
+            for kl in m {
+                if(kl===i){
+                    count = count + 1
+                    println(count)
+                }
+            }
+        }
+        return count
+    }
     func getnum() ->NSArray{
         var arr = [Int]()
         for i in 1...6{
-            var h = false
             var randominteger = arc4random_uniform(49)
-            if contains(arr, Int(randominteger)) {
+            while (randominteger == 0){
                 randominteger = arc4random_uniform(49)
+            }
+            while contains(arr, Int(randominteger)) {
+                println(randominteger)
+                randominteger = arc4random_uniform(49)
+                while (randominteger == 0){
+                    randominteger = arc4random_uniform(49)
+                }
             }
             arr.append(Int(randominteger))
         }
         return arr
     }
 
+    @IBOutlet weak var dz: NSTextField!
+    @IBOutlet weak var gewin: NSTextField!
     @IBOutlet weak var anz: NSTextField!
     @IBAction func go(sender: AnyObject) {
-        var auto = getnum()
+        anz.integerValue = 0
+        var autos = getnum()
         var manu = getnum()
-        for i in auto {
-            if manu.containsObject(i){
-                count = count + 1
-                println(count)
-                
-            }
-            anz.integerValue = count
-            count = 0
+        var p = pruefe(autos,m: manu)
+                    var z:String = autos.description
+            z =  z.stringByReplacingOccurrencesOfString("(", withString: "")
+            z =  z.stringByReplacingOccurrencesOfString(")", withString: "")
+            z =  z.stringByReplacingOccurrencesOfString("\n", withString: "")
+            gewin.stringValue = z
+            var h:String = manu.description
+            h =  h.stringByReplacingOccurrencesOfString("(", withString: "")
+            h =  h.stringByReplacingOccurrencesOfString(")", withString: "")
+            h =  h.stringByReplacingOccurrencesOfString("\n", withString: "")
+            dz.stringValue = h
+            anz.integerValue = Int(p)
         }
-
     }
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
 
-        // Drawing code here.
-    }
-    
-}

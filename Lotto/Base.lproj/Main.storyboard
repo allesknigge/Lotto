@@ -813,6 +813,22 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7o-cg-ohb">
+                                <rect key="frame" x="48" y="77" width="97" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Gewinnzahlen:" id="HLe-09-KZZ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzY-Lu-Wfc">
+                                <rect key="frame" x="151" y="77" width="281" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="vOw-mO-dQy">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="0Uf-ET-aed" firstAttribute="leading" secondItem="cgL-ch-5m5" secondAttribute="leading" constant="5" id="4yW-n9-Myv"/>
@@ -821,6 +837,7 @@
                         </constraints>
                         <connections>
                             <outlet property="anz" destination="Xhk-Vi-nif" id="gy8-Mh-dET"/>
+                            <outlet property="gew" destination="BzY-Lu-Wfc" id="U3Z-ei-laE"/>
                             <outlet property="item1" destination="cE0-0I-Wi4" id="5gW-rd-ZHA"/>
                             <outlet property="item2" destination="M0d-Po-fNs" id="5ZV-j6-3Nx"/>
                             <outlet property="item3" destination="ckG-jc-rk5" id="nYh-eX-LDi"/>
@@ -880,8 +897,8 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xsi-2S-WtY">
-                                <rect key="frame" x="194" y="60" width="63" height="32"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xsi-2S-WtY">
+                                <rect key="frame" x="221" y="58" width="63" height="32"/>
                                 <buttonCell key="cell" type="push" title="Los" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0tT-rk-iMA">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -890,6 +907,38 @@
                                     <action selector="go:" target="Gwe-NY-Z5A" id="Wwh-rR-yAL"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ne-Id-dqG">
+                                <rect key="frame" x="18" y="114" width="97" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Deine Zahlen:" id="3JS-1u-ckV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-l3-7xe">
+                                <rect key="frame" x="18" y="147" width="97" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Gewinnzahlen:" id="TU7-6p-sd8">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iRh-xM-Iiw">
+                                <rect key="frame" x="121" y="147" width="311" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="pT1-fK-ctH">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iK5-px-Ete">
+                                <rect key="frame" x="121" y="114" width="311" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Qh7-9r-xLj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ADV-Qb-GRn" secondAttribute="trailing" constant="85" id="8gc-CZ-4g5"/>
@@ -908,6 +957,8 @@
                         </constraints>
                         <connections>
                             <outlet property="anz" destination="iNS-dF-3Br" id="NxV-oV-dSh"/>
+                            <outlet property="dz" destination="iK5-px-Ete" id="ecR-Am-tIS"/>
+                            <outlet property="gewin" destination="iRh-xM-Iiw" id="Yiv-Eg-ATV"/>
                         </connections>
                     </view>
                 </viewController>

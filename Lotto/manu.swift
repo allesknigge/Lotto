@@ -9,12 +9,27 @@
 import Cocoa
 
 class manu: NSView {
-    var count = 0
+    func pruefe(a: NSArray, m: NSArray) ->Int{
+        var count = 0
+        for i in a {
+            for kl in m {
+                if(kl===i){
+                    count = count + 1
+                    println(count)
+                }
+            }
+        }
+        return count
+    }
+
     func getnum() ->NSArray{
         var arr = [Int]()
         for i in 1...6{
             var h = false
             var randominteger = arc4random_uniform(49)
+            while(randominteger == 0){
+            randominteger = arc4random_uniform(49)
+            }
             if contains(arr, Int(randominteger)) {
                 randominteger = arc4random_uniform(49)
             }
@@ -23,6 +38,7 @@ class manu: NSView {
         return arr
     }
 
+    @IBOutlet weak var gew: NSTextField!
     @IBOutlet weak var anz: NSTextField!
     @IBOutlet weak var item1: NSTextField!
     @IBOutlet weak var item2: NSTextField!
@@ -32,23 +48,18 @@ class manu: NSView {
     @IBOutlet weak var item6: NSTextField!
     
     @IBAction func auswerten(sender: AnyObject) {
-        var auto = getnum()
+        var autos = getnum()
         var manu = [item1.integerValue,item2.integerValue,item3.integerValue,item4.integerValue,item5.integerValue,item6.integerValue]
-        for i in auto {
-            if contains(manu, Int(i as! NSNumber)){
-                count = count + 1
-                println(count)
-                
-            }
-            anz.integerValue = count
-            count = 0
+       var p = pruefe(autos,m: manu)
+            println(autos)
+            var z:String = autos.description
+          z =  z.stringByReplacingOccurrencesOfString("(", withString: "")
+          z =  z.stringByReplacingOccurrencesOfString(")", withString: "")
+          z =  z.stringByReplacingOccurrencesOfString("\n", withString: "")
+            gew.stringValue = z
+            anz.integerValue = Int(p)
         }
 
     }
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
 
-        // Drawing code here.
-    }
-    
-}
+
