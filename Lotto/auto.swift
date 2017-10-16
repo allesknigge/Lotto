@@ -2,7 +2,7 @@
 //  auto.swift
 //  Lotto
 //
-//  Created by David Kranz on 18.05.15.
+//  Created by David "Programming Legend" Kranz on 18.05.15.
 //  Copyright (c) 2015 LOL. All rights reserved.
 //
 
