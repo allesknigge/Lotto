@@ -1,4 +1,4 @@
 # Lotto
 Lotto in Swift
 
-Easy to use 
+Very Easy to use 
